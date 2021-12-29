@@ -10,6 +10,6 @@ This is an early proof-of-concept for using a SaltStack state to create a docker
 * We don't currently detect if the container is already running properly.  We currently assume it is running and don't start it.
 * The Docker endpoint ID is hard coded.  We should autodetect a default and override this default with a pillar.
 
-## What needs imporvements
+## What needs improvement
 * The Portainer login credentials are specified in init.sls.  This should be moved into a secure pillar.
 * Docker Hub credentails are not used, even if they are configured in Portainer.
